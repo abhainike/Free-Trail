@@ -50,4 +50,5 @@ def register():
 
     return render_template("register.html")
 
-app.run(debug=True)
+
+app.run()
