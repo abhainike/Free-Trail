@@ -1,0 +1,58 @@
+body{
+    margin-top: 0;
+    background-color: #FFFF;
+}
+
+
+h1 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* font-family: 'Hanken Grotesk', sans-serif; */
+    font-family: 'Inter', sans-serif;    
+    font-weight: 800;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.6rem;
+}
+
+
+.image {
+    max-width: 100%;
+}
+
+
+
+.box {
+    padding: 0 3%;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.para {
+    opacity: 95%;
+    color: #363636;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.form-popup {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 37%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .heading{
+        padding-top: 140px;
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+}

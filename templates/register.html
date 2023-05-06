@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/b481283466.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>free Tool</title>
+</head>
+<body>
+
+   <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight text-black sm:text-xl lg:text-2xl">Enter details to watch Free Video</h2>
+          </div>
+  
+          <div class="relative max-w-md mx-auto mt-8 md:mt-16">
+              <div class="overflow-hidden bg-white rounded-md shadow-md">
+                  <div class="px-4 py-6 sm:px-8 sm:py-7">
+                      <form action="{{url_for('register')}}" method="POST">
+                          <div class="space-y-5">
+                              
+                                 <div>
+                                    <div class="flex items-center justify-between">
+                                       <label for="" class="text-base font-medium text-gray-900"> First Name </label>
+                                    </div>
+                                    <div class="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                                       <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                          <i class="fa-solid fa-user"></i>
+                                       </div>
+
+                                       <input
+                                          type=""
+                                          name="first_name"
+                                          id=""
+                                          placeholder="Enter First name"
+                                          class="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                                       />
+                                    </div>
+                              </div>
+
+                              <div>
+                                 <div class="flex items-center justify-between">
+                                    <label for="" class="text-base font-medium text-gray-900"> Last Name </label>
+                                 </div>
+                                 <div class="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                       <i class="fa-solid fa-user"></i>
+                                    </div>
+
+                                    <input
+                                       type=""
+                                       name="last_name"
+                                       id=""
+                                       placeholder="Enter Last name"
+                                       class="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                                    />
+                                 </div>
+                              </div>
+                                {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                <ul>
+                                {% for message in messages %}
+                                    <li style="color: red;">*{{ message }}</li>
+                                {% endfor %}
+                                </ul>
+                                {% endif %}
+                                {% endwith %}
+                              <div>
+                                  <label for="" class="text-base font-medium text-gray-900"> Email address </label>
+                                  <div class="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                                          </svg>
+                                      </div>
+  
+                                      <input
+                                          type="email"
+                                          name="email"
+                                          id=""
+                                          placeholder="Enter email to get started"
+                                          class="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                                      />
+                                  </div>
+                              </div>
+  
+                              <div>
+                                  <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
+                                      Watch Free Video Now
+                                  </button>
+                              </div>
+  
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+   
+</body>
+</html>
