@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
-from os import environ
+import os
 
 JASPER_AI_URL = "https://jasper.ai/free-trial?fpr=freedemo"
 app = Flask(__name__)
-app.config["SECRET_KEY"] = environ['SECRET_KEY']
-app.config['SQLALCHEMY_DATABASE_URI'] = environ['DATABASE_URL']
+app.config["SECRET_KEY"] = os.environ['SECRET_KEY']
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 
 
